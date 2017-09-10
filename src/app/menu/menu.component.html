@@ -1,7 +1,8 @@
-<a routerLink="customers/index">
-  Customers
-</a>
-<br/>
-<a routerLink="orders/add">
-  Orders
-</a>
+
+<div>
+  <button md-button [mdMenuTriggerFor]= "appMenu"> Menu Principal </button>
+<md-menu #appMenu="mdMenu">
+  <button md-menu-item routerLink="customers/index"> Customers </button>
+  <button md-menu-item routerLink="orders/add"> Orders </button>
+</md-menu>
+</div>
